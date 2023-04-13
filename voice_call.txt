@@ -1,0 +1,18 @@
+Host the twiml.xml file on a publicly accessible web server. One way to do this is by using GitHub Pages:
+Create a new GitHub repository.
+In the repository, create a new branch called gh-pages.
+Add the twiml.xml file to the root of the gh-pages branch.
+Push the changes to the gh-pages branch.
+Your twiml.xml file will now be hosted at the following URL: https://your_github_username.github.io/your_repository_name/twiml.xml
+Update the Python script to include the twiml_url variable with the URL of your hosted twiml.xml file:
+
+
+twiml_url = 'https://your_github_username.github.io/your_repository_name/twiml.xml'
+
+In the Python script, replace the relevant code where the twiml_url is used. Since you're using MessageBird in
+the previous examples, you'll need to switch to using Twilio to make voice calls using TwiML.
+You can follow this guide to learn how to make voice calls with Twilio in Python.
+
+note that this example demonstrates hosting the twiml.xml file using GitHub Pages,
+but you can host it using any web server or hosting service that allows you to serve static files with
+a publicly accessible URL.
